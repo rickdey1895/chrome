@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Badoo Scraper</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Badoo Data Scraper</h1>
+
+        <div class="data-container">
+            <button id="start-button" class="button">Start Scraping</button>
+            <button id="stop-button" class="button">Stop Scraping</button>
+            <button id="export-button" class="button">Export CSV</button>
+            <button id="clear-button" class="button">Clear Stored</button>
+            <div style="margin-top:10px">Collected: <span id="count">0</span></div>
+        </div>
+
+        <div class="data-container" style="margin-top:10px">
+            <label for="proxy">Proxy (host:port or user:pass@host:port)</label>
+            <textarea id="proxy" rows="2" style="width:100%"></textarea>
+            <button id="save-proxy" class="button">Save Proxy</button>
+            <hr />
+            <label for="uploadUrl">Upload URL (optional)</label>
+            <input id="uploadUrl" type="text" style="width:100%" placeholder="https://your-server.example.com/upload" />
+            <div style="margin-top:6px">
+                <label><input id="autoUpload" type="checkbox" /> Auto-upload batches to server</label>
+            </div>
+            <button id="save-upload" class="button">Save Upload Settings</button>
+        </div>
+
+        <div class="data-container" style="margin-top:10px">
+            <div id="status"></div>
+        </div>
+    </div>
+    <script src="popup.ts"></script>
+</body>
+</html>

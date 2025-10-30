@@ -1,0 +1,2 @@
+(()=>{"use strict";document.addEventListener("DOMContentLoaded",()=>{const e=document.getElementById("save"),n=document.getElementById("inputField");e&&n&&(chrome.storage.sync.get(["userPreference"],e=>{e&&e.userPreference&&(n.value=e.userPreference)}),e.addEventListener("click",()=>{const e=n.value;chrome.storage.sync.set({userPreference:e},()=>{console.log("Preference saved:",e)})}))})})();
+//# sourceMappingURL=options.js.map

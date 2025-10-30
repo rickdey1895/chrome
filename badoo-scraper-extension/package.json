@@ -1,0 +1,29 @@
+{
+  "name": "badoo-scraper-extension",
+  "version": "1.0.0",
+  "description": "A Chrome extension for scraping data from Badoo.",
+  "main": "src/background/service-worker.ts",
+  "scripts": {
+    "build": "webpack --mode production",
+    "watch": "webpack --watch",
+    "start": "webpack-dev-server --mode development"
+  },
+  "keywords": [
+    "chrome",
+    "extension",
+    "scraper",
+    "badoo"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "typescript": "^4.5.4",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0",
+    "ts-loader": "^9.2.6"
+  }
+}
